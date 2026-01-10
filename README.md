@@ -71,10 +71,7 @@ npm run dev
 
 ## 📖 使用指南
 
-<video width="100%" controls>
-  <source src="doc/离线地图下载器.mp4" type="video/mp4">
-  您的浏览器不支持视频标签。
-</video>
+[观看演示视频](./doc/离线地图下载器.mp4)
 
 
 ### 1. 选择地图源
