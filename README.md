@@ -71,7 +71,7 @@ npm run dev
 
 ## 📖 使用指南
 
-https://www.bilibili.com/video/BV1k46oBaEXy/?share_source=copy_web&vd_source=72aa4f31238972662733e2bba889a0c9  
+[https://www.bilibili.com/video/BV1k46oBaEXy/?share_source=copy_web&vd_source=72aa4f31238972662733e2bba889a0c9  ](https://www.bilibili.com/video/BV1k46oBaEXy/?spm_id_from=333.40164.0.0&vd_source=0162a10fe3ccc2eb957b85fbe842f580)
 
 
 ### 1. 选择地图源
