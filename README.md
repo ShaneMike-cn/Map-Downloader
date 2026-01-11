@@ -71,7 +71,7 @@ npm run dev
 
 ## 📖 使用指南
 
-【开源！3 小时 VibeCoding 离线地图下载器！！】 https://www.bilibili.com/video/BV1k46oBaEXy/?share_source=copy_web&vd_source=72aa4f31238972662733e2bba889a0c9
+https://www.bilibili.com/video/BV1k46oBaEXy/?share_source=copy_web&vd_source=72aa4f31238972662733e2bba889a0c9  
 
 
 ### 1. 选择地图源
