@@ -300,6 +300,9 @@
     <!-- 右侧：地图区域 -->
     <div class="map-wrapper">
       <div id="amap-container" class="map-view"></div>
+      
+      <!-- 微信二维码图片 -->
+      <img src="/../doc/wx.png" alt="微信公众号：AI能见度" class="qr-watermark" />
 
       <!-- 新增：自定义坐标/画图面板 -->
       <div class="coords-panel">
@@ -685,9 +688,9 @@ function addLog(msg: string) {
 }
 
 function initAMap() {
-  window._AMapSecurityConfig = { securityJsCode: "23c00ef6059cd80c4d258532eeab0fac" };
+  window._AMapSecurityConfig = { securityJsCode: "" };
   AMapLoader.load({
-    key: "5ceedd5be3ae4e4067808cea3b5d6b48",
+    key: "",
     version: "2.0",
     plugins: ["AMap.MouseTool", "AMap.Rectangle"],
   }).then((AMap) => {
@@ -827,4 +830,35 @@ input, select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius
 .download-item { display: flex; gap: 12px; }
 .download-select { display: flex; align-items: center; }
 .download-select input { width: 16px; height: 16px; }
+/* 水印样式 */
+.watermark {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 999;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+}
+
+/* 二维码水印样式 - 定位在右下角 */
+.qr-watermark {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 500px;
+  height: auto;
+  z-index: 999;
+  opacity: 0.8;
+  border-radius: 8px;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+}
 </style>
