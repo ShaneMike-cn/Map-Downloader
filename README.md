@@ -1,7 +1,7 @@
 # 🗺️ 离线地图瓦片下载器
 
 
-`重点！！！：地图显示，代码中需要填写高德api-key`
+
 
 一个功能完整的离线地图瓦片下载和管理系统，支持多种地图源、区域选择、MinIO云存储集成以及下载管理。
 
@@ -76,12 +76,24 @@ npm run dev
 
 [https://www.bilibili.com/video/BV1k46oBaEXy/?share_source=copy_web&vd_source=72aa4f31238972662733e2bba889a0c9  ](https://www.bilibili.com/video/BV1k46oBaEXy/?spm_id_from=333.40164.0.0&vd_source=0162a10fe3ccc2eb957b85fbe842f580)
 
+### 配置地图key
 
+`重点！！！：地图显示，代码中需要填写高德api-key` 位置在my-tiller-ui/src/App.vue中
+```vue
+function initAMap() {
+  window._AMapSecurityConfig = { securityJsCode: "" };
+  AMapLoader.load({
+    key: "",          //这里进行添加自己的高德js-web的key
+    version: "2.0",
+    plugins: ["AMap.MouseTool", "AMap.Rectangle"],
+  })
+```
 ### 1. 选择地图源
 在左侧控制面板中选择预设的地图源，或自定义URL模板。
+**注意⚠️，如果是选择谷歌地图，确认网络可达性，建议选择arcgis的图源、天地图图源**
 
 ### 2. 设置区域
-- **通过行政区域选择**：使用高德地图API选择省市区
+**注意⚠️是在现有的地图中选择需要的范围，进行下载，所以目前的地图是高德（需自行配置key，配置可参考上文）。然后根据高德的地图进行选择范围，下载其他的图源，这里高德地图是为了方便进行选择范围**
 - **手动绘制**：在地图上绘制矩形区域
 - **手动输入坐标**：直接输入北、南、西、东边界坐标
 
@@ -175,6 +187,8 @@ node server.ts
 ## 🤝 贡献
 
 欢迎提交 Issue 和 Pull Request 来改进这个项目。
+
+
 
 ## 📧 联系方式
 
